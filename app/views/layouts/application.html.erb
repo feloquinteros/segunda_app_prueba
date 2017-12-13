@@ -3,12 +3,17 @@
   <head>
     <title>SegundaApp</title>
     <%= csrf_meta_tags %>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-GIcXw8rYyx4xrVfccSt7E7KGw2nAFDG/TNLq9NMPHKH5Rv3aqk6laThLgQFQnIYF" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= yield %>
+<div class="container">
+  <%= yield %>
+
+</div>
   </body>
 </html>
